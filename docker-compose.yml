@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+  scully-2:
+    image: anssi/fcsc2019-web-scully-2:latest
+    ports:
+      - "80:8000"
