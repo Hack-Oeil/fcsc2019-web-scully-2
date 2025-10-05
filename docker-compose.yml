@@ -3,4 +3,8 @@ services:
   scully-2:
     image: anssi/fcsc2019-web-scully-2:latest
     ports:
-      - "80:8000"
+      - ${PORT}:8000
+    environment:
+      - HOOS_CTF_USERNAME=${HOOS_CTF_USERNAME:-}
+    labels:
+      ho.ctf.cyrhades: "1"
